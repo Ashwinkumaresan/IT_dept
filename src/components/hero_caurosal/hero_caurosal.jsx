@@ -102,7 +102,7 @@ const HeroCarousel = () => {
                     <h1 className="display-5 fw-bold m-0 p-0">{slide.title}</h1>
                     <p className="fs-2 h2 mb-1 p-0 m-0">{slide.dept}</p>
                     <p className="fs-6 fw-light p-0 m-0">{slide.description}</p>
-                    <a href={slide.ctaLink} className="btn btn-light btn-lg px-5 py-1 mt-1 m-0">
+                    <a href={slide.ctaLink} className="btn btn-primary btn-lg px-5 py-1 mt-1 m-0">
                         {slide.ctaText}
                     </a>
                     </div>

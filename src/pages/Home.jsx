@@ -1,10 +1,12 @@
-import React from 'react'
-import HeroCarousel from '../components/hero_caurosal/hero_caurosal'
+import HeroCarousel from "../components/hero_caurosal/hero_caurosal";
 
-export const Home = () => {
-  return (
-    <>
-    <HeroCarousel/>
-    </>
-  )
-}
+const Home = () => {
+    return (
+      <>
+      <HeroCarousel/>
+      </>
+    );
+  };
+  
+  export default Home;  // ✅ Ensure this line is present
+  
