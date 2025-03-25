@@ -1,10 +1,17 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
+import { useInView } from "react-intersection-observer"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap,faShapes } from '@fortawesome/free-solid-svg-icons';
+import { useState } from "react";
 // import { FaInfoCircle, FaGraduationCap, FaUniversity, FaUsers } from "react-icons/fa";
 
 export const About = () => {
+    const [counterState, setCounterState] = useState(false);
+    const { ref, inView } = useInView();
+
   return (
     <>
     <section className="w-100 py-5 bg-light my-5">
@@ -85,21 +92,42 @@ export const About = () => {
     <section className="w-100">
         <Container>
         <h2 className="text-center mb-4">Department Highlights</h2>
-            <Row>
+            <Row ref={ref}>
                 <Col xs={6} sm={6} md={3} lg={3} xl={3} className="text-center my-3">
-                    <h2 className="display-6 fw-bold">5+</h2>
+                    <h2 className="display-6 fw-bold">
+                        { inView  && <CountUp
+                        start={0}
+                        end={5}
+                        duration={2.75} >
+                        </CountUp>}+
+                        </h2>
                     <p>Years of Excellence</p>
                 </Col>
                 <Col xs={6} sm={6} md={3} lg={3} xl={3} className="text-center my-3">
-                    <h2 className="display-6 fw-bold">98%</h2>
+                    <h2 className="display-6 fw-bold">
+                    { inView  && <CountUp
+                        start={0}
+                        end={98}
+                        duration={2.75} >
+                        </CountUp>}%</h2>
                     <p>Placement Rate</p>
                 </Col>
                 <Col xs={6} sm={6} md={3} lg={3} xl={3} className="text-center my-3">
-                    <h2 className="display-6 fw-bold">50+</h2>
+                    <h2 className="display-6 fw-bold">
+                    { inView  && <CountUp
+                        start={0}
+                        end={50}
+                        duration={2.75} >
+                        </CountUp>}+</h2>
                     <p>Faculty Member</p>
                 </Col>
                 <Col xs={6} sm={6} md={3} lg={3} xl={3} className="text-center my-3">
-                    <h2 className="display-6 fw-bold">12+</h2>
+                    <h2 className="display-6 fw-bold">
+                    { inView  && <CountUp
+                        start={0}
+                        end={20}
+                        duration={2.75} >
+                        </CountUp>}+</h2>
                     <p>Research Publications</p>
                 </Col>
             </Row>
