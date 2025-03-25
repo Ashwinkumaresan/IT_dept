@@ -86,19 +86,19 @@ export const About = () => {
         <Container>
         <h2 className="text-center mb-4">Department Highlights</h2>
             <Row>
-                <Col xs={3} sm={3} md={3} lg={3} xl={3} className="text-center my-3">
+                <Col xs={6} sm={6} md={3} lg={3} xl={3} className="text-center my-3">
                     <h2 className="display-6 fw-bold">5+</h2>
                     <p>Years of Excellence</p>
                 </Col>
-                <Col xs={3} sm={3} md={3} lg={3} xl={3} className="text-center my-3">
+                <Col xs={6} sm={6} md={3} lg={3} xl={3} className="text-center my-3">
                     <h2 className="display-6 fw-bold">98%</h2>
                     <p>Placement Rate</p>
                 </Col>
-                <Col xs={3} sm={3} md={3} lg={3} xl={3} className="text-center my-3">
+                <Col xs={6} sm={6} md={3} lg={3} xl={3} className="text-center my-3">
                     <h2 className="display-6 fw-bold">50+</h2>
                     <p>Faculty Member</p>
                 </Col>
-                <Col xs={3} sm={3} md={3} lg={3} xl={3} className="text-center my-3">
+                <Col xs={6} sm={6} md={3} lg={3} xl={3} className="text-center my-3">
                     <h2 className="display-6 fw-bold">12+</h2>
                     <p>Research Publications</p>
                 </Col>
