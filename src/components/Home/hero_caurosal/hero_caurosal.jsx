@@ -88,6 +88,7 @@ const HeroCarousel = () => {
             <Carousel.Item key={slide.id}>
                 <div
                 className="carousel-background"
+                rel="preload"
                 style={{
                     backgroundImage: `url(${slide.image})`,
                     height: "500px",
