@@ -1,7 +1,6 @@
-"use client"
-
 import { useState, useEffect, useRef } from "react"
 import { Navbar, Nav, Container, Button } from "react-bootstrap"
+import { Link, useLocation } from 'react-router-dom';
 import "./Navbar.css"
 
 const ModernNavbar = () => {
@@ -60,9 +59,9 @@ const ModernNavbar = () => {
 
         <div className="d-flex align-items-center">
           <div className="login-button-container d-lg-none">
-            <Button className="login-button btn btn-primary px-4 py-1">
-              {state}
-            </Button>
+          <Link to="/student-login" className="text-primary">
+            <button className='btn btn-primary text-white ms-lg-3 px-4'>{state}</button>
+          </Link>
           </div>
 
           <Navbar.Toggle
@@ -98,9 +97,9 @@ const ModernNavbar = () => {
           </Nav>
 
           <div className="d-none d-lg-block">
-            <Button className="login-button btn btn-primary px-4 py-1" href="/student-login">
-              {state}
-            </Button>
+          <Link to="/student-login" className="text-primary">
+            <button className='btn btn-primary text-white ms-lg-3 px-4'>{state}</button>
+          </Link>
           </div>
         </Navbar.Collapse>
       </Container>
