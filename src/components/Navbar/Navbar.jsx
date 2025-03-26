@@ -55,7 +55,7 @@ const ModernNavbar = () => {
     >
       <Container>
         <Navbar.Brand href="#home" className="brand">
-          <span className="brand-text fs-4">Information Technology</span>
+          <span className="brand-text">Dr. MCET</span>
         </Navbar.Brand>
 
         <div className="d-flex align-items-center">
