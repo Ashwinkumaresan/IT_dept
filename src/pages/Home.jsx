@@ -1,13 +1,13 @@
-import { Galler } from "../components/Home/Gallery/Galler";
 import { About } from "../components/Home/hero_caurosal/About/About";
 import HeroCarousel from "../components/Home/hero_caurosal/hero_caurosal";
+import { Updates } from "../components/Home/Updates/Updates";
 
 const Home = () => {
     return (
       <>
       <HeroCarousel/>
       <About/>
-      <Galler/>
+      <Updates/>
       </>
     );
   };

@@ -75,7 +75,7 @@ const HeroCarousel = () => {
             activeIndex={index}
             onSelect={handleSelect}
             interval={null} // We're handling the interval manually
-            controls={true}
+            controls={false}
             indicators={true}
             className="hero-carousel"
             style={
@@ -100,10 +100,10 @@ const HeroCarousel = () => {
                 <div className="carousel-overlay" style={{borderRadius:"8px"}}></div>
                 <div className="carousel-content container d-flex align-items-center justify-content-center h-100 p-md-5" style={{borderRadius:"8px"}}>
                     <div className="text-center text-white p-md-5">
-                    <h1 className="display-5 fw-bold m-0 p-0">{slide.title}</h1>
-                    <p className="fs-2 h2 mb-1 p-0 m-0">{slide.dept}</p>
-                    <p className="fs-6 fw-light p-0 m-0">{slide.description}</p>
-                    <a href={slide.ctaLink} className="btn btn-primary btn-lg px-5 py-1 mt-1 m-0">
+                    <h1 className="display-5 fw-bold m-0 p-0 mb-2">{slide.title}</h1>
+                    <p className="fs-2 h2 mb-1 p-0 m-0 mb-1">{slide.dept}</p>
+                    <p className="fs-6 fw-light p-0 m-0 mb-1">{slide.description}</p>
+                    <a href={slide.ctaLink} className="btn btn-primary px-5 py-1 mt-1 m-0 fs-6">
                         {slide.ctaText}
                     </a>
                     </div>
