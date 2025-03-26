@@ -98,7 +98,7 @@ const ModernNavbar = () => {
           </Nav>
 
           <div className="d-none d-lg-block">
-            <Button className="login-button btn btn-primary px-4 py-1">
+            <Button className="login-button btn btn-primary px-4 py-1" href="/student-login">
               {state}
             </Button>
           </div>
